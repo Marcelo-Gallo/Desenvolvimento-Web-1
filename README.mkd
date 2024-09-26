@@ -1,0 +1,61 @@
+## Perguntas para a prova
+- Qual a diferença entre atributos e elementos?
+
+## Conceitos - Atributos
+- Atributos essenciais e opcionais.
+- Atributos declarados na tag inicial.
+- Atributo Style é a forma mais adequada, mas é mais adequado ainda usar arquivo CSS.
+- Atributo title é um atributo global.
+- Alt é o texto alternativo, caso a imagem não carregar.
+- href é o endereço da imagem.
+- Recomendável colocar aspas em tudo
+
+## Conceitos - Imagens
+- Imagens são vinculadas, precisa especificar o caminho.
+- src é obrigatorio, é o path.
+- alt é o texto alternativo, exibido caso a imagem não seja carregada.
+- Figure e Figure Caption:
+```html
+    <figure>
+        <img src="picture_aleatoria.jpg">
+        <figcaption>Legenda da figura, SEMANTICA pura. Cria um bloco pra imagem e legenda.</figcaption>
+    </figure>
+```
+- Figure e Figure Caption aceitam atributos globais.
+- Picture e source:
+```html
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">/*Imagem pra dispositivos de 650px*/
+    <source media="(min-width: 450px)" srcset="img_car.jpg">/*Imagem pra dispositivos de 450px*/
+    <img src="img_girl.jpg"> /*Imagem padrão*/
+</picture>
+```
+- Evita o uso de bootstrap e plugins de JS.
+
+## Conceitos - Midia
+- Video e audio hospedado como imagem.
+```html
+<video>
+    <source src="movie.mp4" type="video/mp4"> /*Tenta*/
+    <source src="movie.ogg" type="video/ogg"> /*Tenta*/
+    Seu dispositivo não possui suporte à elementos de video. /*Tenta*/
+<video>
+```
+- Incorporando serviços da internet.
+- A maioria usa o <iframe></iframe>
+```html
+<iframe src="source"></iframe>
+```
+- No youtube, apertar em compartilhar -> incorporar -> copiar e só colar.
+- Caso der que está indisponivél, é porque o proprietario não disponibilizou para ser incorporado.
+
+## Conceitos - Links
+- Pela tag <a>Clique aqui!!</a>
+- Atributo target define como o link será aberto.
+- Qualquer coisa pode ser um link.
+- BookMark é um atributo que linka dentro da propria página.
+- Para o bookmark é necessário ter o id's que serão apontados (destino) e no link o atributo href poder ser href="#id" ou href="pagina.html#id"
+
+## Dicas
+- lang = é interessante ser usado na semantica, para previnir que um corretor automático não traduza uma frase em ingles, por exemplo
+- Trabalho de incorporar video do youtube.
