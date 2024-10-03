@@ -1,0 +1,26 @@
+table, td {
+    border: 1px solid gray;
+}
+
+/*Green Table*/
+.TableHeadGreen {
+    background-color: green;
+}
+
+.TableRowGreen {
+    background-color: mediumaquamarine;
+}
+
+/*Black table*/
+.TableHeadGray {
+    background-color: gray;
+}
+
+.TableRowBlack {
+    background-color: black;
+    color: white;
+}
+
+.TableRowLightGray {
+    background-color: lightgray;
+}
