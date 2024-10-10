@@ -56,6 +56,10 @@
 - BookMark é um atributo que linka dentro da propria página.
 - Para o bookmark é necessário ter o id's que serão apontados (destino) e no link o atributo href poder ser href="#id" ou href="pagina.html#id"
 
+## Conceitos CSS
+- Cascading Style Sheet (Folha de estilo em cascata).
+- Basicamente, é um modo de alterar a aparencia do HTML.
+
 ## Dicas
 - lang = é interessante ser usado na semantica, para previnir que um corretor automático não traduza uma frase em ingles, por exemplo
 - Trabalho de incorporar video do youtube.
