@@ -1,0 +1,19 @@
+html {
+    background-image: url("gato.png");
+    min-height: 90vh;
+    background-position: bottom;
+    background-size: 40px;
+    background-repeat: repeat-x;
+}
+
+section {
+    background-image: url(image.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+table, td {
+    border: 1px solid black;
+    padding: 5px;
+}
