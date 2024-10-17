@@ -1,0 +1,125 @@
+section.verde{
+    background-color: rgb(0, 255, 38);
+}
+
+section h2{
+    text-align: center;
+}
+
+section h3{
+    text-decoration: underline;
+    text-indent: 2em;
+}
+
+.grifo{
+    background-color: yellow;
+}
+
+.pNeutro{
+    background-color: white;
+    text-indent: 2em;
+}
+
+.pAzul{
+    color: blue;
+}
+
+.pVermelho{
+    color: red;
+}
+
+.pAmarelo{
+    color: yellow;
+}
+
+.pStart{
+    text-align: start;
+}
+
+.pCenter{
+    text-align: center;
+}
+
+.pEnd{
+    text-align: end;
+}
+
+.pLine{
+    text-decoration: line-through;
+}
+
+.pUnder{
+    text-decoration: underline;
+}
+
+.pUp{
+    text-transform: uppercase;
+}
+
+.pLow{
+    text-transform: lowercase;
+}
+
+.p16{
+    text-indent: 1em;
+}
+
+.p32{
+    text-indent: 2em;
+}
+
+.p1em{
+    line-height: 1em;
+}
+
+.p15em{
+    line-height: 1.5em;
+}
+
+.p2em{
+    line-height: 2em;
+}
+
+section.azul{
+    background-color: lightblue;
+}
+
+.pArial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pVerdana{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.pCursive{
+    font-family: cursive;
+}
+
+.pMono{
+    font-family: monospace;
+}
+
+.pItalic{
+    font-style: italic;
+}
+
+.pBold{
+    font-weight: bold;
+}
+
+.pSmall{
+    font-size: 10px;
+}
+
+.pMedium{
+    font-size: 14px;
+}
+
+.pLarge{
+    font-size: 18px;
+}
+
+.pXLarge{
+    font-size: 24px;
+}
