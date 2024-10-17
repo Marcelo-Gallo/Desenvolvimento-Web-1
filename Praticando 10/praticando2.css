@@ -1,0 +1,28 @@
+section.Abel{
+    font-family: 'Abel';
+    background-color: lightblue;
+}
+
+section.Borel{
+    font-family: 'Borel';
+    background-color: rgb(255, 103, 103);
+}
+
+section.Crimson{
+    font-family: 'Crimson Text';
+    background-color: rgb(126, 238, 178);
+}
+
+section.Hand{
+    font-family: 'Handjet';
+    background-color: rgb(228, 228, 228);
+}
+
+section.Roboto{
+    font-family: 'Roboto Slab';
+    background-color: rgb(222, 117, 106);
+}
+
+.destaque{
+    color: red;
+}
