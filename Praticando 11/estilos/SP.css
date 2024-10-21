@@ -1,0 +1,27 @@
+.principal {
+    background-color: #ffedc9;
+    color: #a15129;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.grifo {
+    background-color: yellow;
+    color: black;
+}
+
+.principal ol p {
+    text-wrap: unset;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 480px;
+    height: 280px;
+}
