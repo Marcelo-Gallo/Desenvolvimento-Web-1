@@ -1,0 +1,65 @@
+.principal {
+    background-color: #d3d3d3;
+}
+
+.sp {
+    background-color: #ffedc9;
+    color: #a15129;
+}
+
+.sp .grifo {
+    background-color: yellow;
+    color: black;
+}
+
+.sp .lista {
+    color: black;
+}
+
+.rj {
+    background-color: #d2e0fb;
+    color: #2765a1;
+}
+
+.rj .grifo {
+    background-color: yellow;
+    color: black;
+}
+
+.rj .lista {
+    color: black;
+}
+
+.mg {
+    background-color: #fff9e1;
+    color: #4e7c5b;
+}
+
+.mg .grifo {
+    background-color: yellow;
+    color: black;
+}
+
+.mg .lista {
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    color: black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+th {
+    background-color: #8f8b8b;
+    font-weight: bold;
+}
+
+tbody td {
+    background-color: #f5f5f5;
+}
