@@ -1,0 +1,23 @@
+.principal {
+    background-color: #fff9e1;
+    color: #4e7c5b;
+}
+
+.grifo {
+    background-color: yellow;
+    color: black;
+}
+
+.principal ol p {
+    text-wrap: unset;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 480px;
+    height: 280px;
+}
