@@ -1,0 +1,36 @@
+Praticando 1 - Unidades de medida, Altura, Largura e Bordas
+
+Seção 1 - Valores relativos
+
+Borda: simples com 1 viewport height de largura
+Tamanho da fonte: 2 viewport width
+Largura (do container): 65%
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo impedit alias ea delectus est corporis autem maiores et reprehenderit, ducimus doloribus, inventore tempore recusandae commodi atque necessitatibus consequatur quod esse.
+
+Seção 2 - Valores absolutos
+
+Borda: simples com 6 pixels de largura
+Tamanho da fonte: 14 pontos
+Largura (do container): 620 pixels
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo impedit alias ea delectus est corporis autem maiores et reprehenderit, ducimus doloribus, inventore tempore recusandae commodi atque necessitatibus consequatur quod esse.
+
+-------------
+
+Praticando 2 - Lhama, lhama, lhama!
+Lhama, lhama, lhama!
+
+https://fonts.google.com/specimen/Lobster
+
+https://ichef.bbci.co.uk/news/640/cpsprodpb/DED5/production/_104154075_gettyimages-154948449.jpg
+
+-------------
+
+Praticando 3 - Bordas
+
+Tartaruga-marinha (Cheloniidae) é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.
+
+A sobrevivência das tartarugas-marinhas continua em risco devido a muitos anos de caça intensiva pela sua carapaça, carne (utilizada para sopa) e gordura. Atualmente a caça está controlada, mas estes animais continuam ameaçados pelas redes de pesca que matam cerca de 40 000 exemplares por ano. Outra das maiores ameaças é o desenvolvimento costeiro nas áreas de nidificação, que impede as fêmeas de pôr os ovos e impossibilita a sua reprodução.
+
+A maioria das espécies são migratórias e vagueiam pelos oceanos, orientando-se com a ajuda do campo magnético terrestre.
+
+https://www.petz.com.br/blog/wp-content/uploads/2022/06/tempo-de-vida-de-uma-tartaruga-3.jpg
