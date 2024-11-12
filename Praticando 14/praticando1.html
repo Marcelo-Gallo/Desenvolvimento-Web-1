@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Layout com Flexbox</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Oriya:wght@400..700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #b2f2b2;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #b2f2b2;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+            border-left: 2px solid #b2f2b2;
+            font-size: 1.5em;
+            line-height: 2em;
+
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .grid-item {
+            flex: 1 1 calc(33.333% - 20px);
+            border: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            text-align: center;
+            padding: 10px;
+            max-width: 150px;
+            font-size: 3em;
+        }
+
+        .grid-item span {
+            margin-top: 5px;
+            padding-top: 15px;
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .footer {
+            background-color: #b2f2b2;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>::. Meu layout de site com Flexbox .::</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="main-content">
+        <section class="content">
+            <h2>Corpo do site</h2>
+            <div class="grid-container">
+                <div class="grid-item">1 <br> <span>One</span></div>
+                <div class="grid-item">2 <span>Two</span></div>
+                <div class="grid-item">3 <span>Three</span></div>
+                <div class="grid-item">4 <span>Four</span></div>
+                <div class="grid-item">5 <span>Five</span></div>
+                <div class="grid-item">6 <span>Six</span></div>
+                <div class="grid-item">7 <span>Seven</span></div>
+                <div class="grid-item">8 <span>Eight</span></div>
+                <div class="grid-item">9 <span>Nine</span></div>
+                <div class="grid-item">10 <span>Ten</span></div>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h2>Box lateral</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum elementum mauris, a
+                convallis augue maximus in. Aliquam velit libero, lobortis sit amet odio id, mollis blandit est. Donec
+                volutpat suscipit nibh, at commodo nisl lobortis non. Donec porta sed erat efficitur dignissim. Nullam
+                vulputate, quam eu malesuada condimentum, dui nisl ultricies sapien, hendrerit vulputate mauris nibh
+                quis dui.</p>
+        </aside>
+    </div>
+    <footer class="footer">
+        Criado por Marcelo Gallo<br>
+        marceloaugustogallo@gmail.com
+    </footer>
+</body>
+
+</html>
