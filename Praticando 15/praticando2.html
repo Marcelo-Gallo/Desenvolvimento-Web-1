@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2 - Formulario</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80vw;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Praticando 2 - Formulários HTML com CSS</h1>
+
+    <form action="" method="post">
+        <label for="nome">Nome</label>
+        <input name="nome" type="text" id="nome" placeholder="digite seu nome"> <br>
+
+        <label for="email">e-mail</label>
+        <input name="email" type="email" id="email" placeholder="digite seu email"> <br>
+
+        <label for="carros">Marca de carro preferida</label>
+        <select name="carros" id="carros">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="chevrolet">Chevrolet</option>
+        </select> <br>
+
+        <label for="observacoes">Observações</label> <br>
+        <textarea name="observacoes_usr" id="observacoes" placeholder="digite suas observações aqui"></textarea> <br> <br>
+
+        <label for="linguagem_fav">Linguagem Web favorita:</label>
+        <input type="radio" name="linguagem_fav" value="html" id="html"><img src="pngegg.png" alt="" width="80px">
+        <input type="radio" name="linguagem_fav" value="css" id="css"><img src="pngegg (1).png" alt="" width="80px">
+        <input type="radio" name="linguagem_fav" value="js" id="js"><img src="pngegg (2).png" alt="" width="80px"> <br> <br>
+
+        <label name="filmes_desejados">Filmes que quero ver quando lançar: </label> <br>
+        <input type="checkbox" name="filmes_desejados" value="matrix" id="matrix"><a href="https://pt.wikipedia.org/wiki/Matrix">Matrix</a> <br>
+        <input type="checkbox" name="filmes_desejados" value="star_wars" id="star_wars"><a href="https://pt.wikipedia.org/wiki/Star_Wars">Star Wars</a> <br>
+        <input type="checkbox" name="filmes_desejados" value="senhor_dos_aneis" id="senhor_dos_aneis"><a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is"> Senhor dos aneis</a> <br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>
