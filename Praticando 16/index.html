@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Praticando 1 - JS</title>
 
     <script>
 
-        alert('Olá, Mundo!')
-        // let x = true;
-        // let i = 0;
-        // do {
-        //     console.log(i)
-        //     i++
-        // } while (x = true)
-        
+        let x = prompt("Qual é seu nome?");
+        if (x === null) {
+            alert("Você cancelou o questionário!");
+        } else {
+            if (confirm("Olá, " + x + "! Seja bem-vindo! \n\n Sabe programar em JS?")) {
+                alert("Que legal! Continue praticando!");
+            } else {
+                alert("Não se preocupe! Irá aprender!");
+            }
+        }
+
+
+
+
+
     </script>
-    
+
 
 </head>
+
 <body>
-    
+    <h1>Praticando 1 - JS</h1>
 </body>
+
 </html>
