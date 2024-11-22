@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1 - JavaScript</title>
+    <link rel="stylesheet" href="../X-Bootstrap/bootstrap.min.css">
+</head>
+<body class="mx-5 my-5">
+    <h1>Praticando 1 - JavaScript</h1>
+    <h1 class="fw-light">Seja bem vindo, <span class="fw-bold"></span>! </h1>
+
+    <button id="add" class="btn btn-secondary mb-4" onclick="addText()">Adicionar texto (Paragrafo Lorem Ipsum.)</button> <br>
+    <button id="remove" class="btn btn-secondary" onclick="removeText()">Remover todos os paragrafos.</button>
+
+    <div id="paragrafos">
+
+    </div>
+
+    <script>
+        let nome = prompt("Olá! Seja bem-vindo! \n\n Qual seu nome?");
+        if (nome === null || nome === "") {
+            alert("Você cancelou a identificação!");
+            document.querySelector("span").textContent = "Visitante";
+        } else {
+            document.querySelector("span").textContent = nome;
+        }
+
+        function addText() {
+            document.getElementById("paragrafos").innerHTML += "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>";          
+        }
+
+        function removeText() {
+            document.getElementById("paragrafos").innerHTML = "";
+        }
+
+    </script>
+</body>
+</html>
