@@ -27,24 +27,12 @@
             background-color: violet;
         }
 
-        b1:hover {
-            background-color: red;
-        }
-
-        b2:hover {
-            background-color: green;
-        }
-
-        b3:hover {
-            background-color: blue;
-        }
-
-        b4:hover {
-            background-color: yellow;
-        }
-
-        b5:hover {
-            background-color: violet;
+        .preview {
+            display: none;
+            font-size: 2.5rem; /* Aumentando o tamanho da fonte */
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold; /* Adicionando negrito */
         }
     </style>
 
@@ -54,80 +42,46 @@
     <div class="container">
         <h1>Praticando 3 - JavaScript - cores (Click e mouse)</h1>
         <div class="d-flex justify-content-around">
-            <button onclick="vermelho()" id="b1" class="p-3 col-2 vermelho"></button>
-            <button onclick="verde()" id="b2" class="col-2 verde"></button>
-            <button onclick="azul()" id="b3" class="col-2 azul"></button>
-            <button onclick="amarelo()" id="b4" class="col-2 amarelo"></button>
-            <button onmouseover="rosa(); preview()" onmouseout="padrao()" onclick="rosa()" id="b5" class="col-2 rosa"></button>
+            <button onclick="setColor('red')" onmouseover="preview('red')" onmouseout="hidePreview()" id="b1" class="p-3 col-2 vermelho"></button>
+            <button onclick="setColor('green')" onmouseover="preview('green')" onmouseout="hidePreview()" id="b2" class="col-2 verde"></button>
+            <button onclick="setColor('blue')" onmouseover="preview('blue')" onmouseout="hidePreview()" id="b3" class="col-2 azul"></button>
+            <button onclick="setColor('yellow')" onmouseover="preview('yellow')" onmouseout="hidePreview()" id="b4" class="col-2 amarelo"></button>
+            <button onclick="setColor('violet')" onmouseover="preview('violet')" onmouseout="hidePreview()" id="b5" class="col-2 rosa"></button>
         </div>
 
         <div class="row mt-3 ms-3">
             <button onclick="reset()" id="reset" class="col-2 btn btn-secondary">Reset</button>
         </div>
 
-        <div id="preview" class="row">
-
+        <div id="preview" class="preview">
+            Preview
         </div>
 
     </div>
 
     <script>
-        let x = 0;
+        let currentColor = 'white';
 
-        function padrao() {
-            switch(x) {
-            case 1:
-                document.getElementById('body').style.backgroundColor = 'red';
-                break;
-            case 2:
-                document.getElementById('body').style.backgroundColor = 'green';
-                break;
-            case 3:
-                document.getElementById('body').style.backgroundColor = 'blue';
-                break;
-            case 4:
-                document.getElementById('body').style.backgroundColor = 'yellow';
-                break;
-            case 5:
-                document.getElementById('body').style.backgroundColor = 'violet';
-                break;
-            default:
-                document.getElementById('body').style.backgroundColor = 'white';
-            }   
+        function setColor(color) {
+            document.getElementById('body').style.backgroundColor = color;
+            currentColor = color;
         }
 
-        function preview() {
-            document.getElementById('preview').innerHTML = 'Preview';
+        function preview(color) {
+            document.getElementById('body').style.backgroundColor = color;
+            let previewDiv = document.getElementById('preview');
+            previewDiv.style.display = 'block';
         }
 
-        function vermelho() {
-            document.getElementById('body').style.backgroundColor = 'red';
-            x = 1;
-        }
-
-        function verde() {
-            document.getElementById('body').style.backgroundColor = 'green';
-            x = 2;
-        }
-
-        function azul() {
-            document.getElementById('body').style.backgroundColor = 'blue';
-            x = 3;
-        }
-
-        function amarelo() {
-            document.getElementById('body').style.backgroundColor = 'yellow';
-            x = 4;
-        }
-
-        function rosa() {
-            document.getElementById('body').style.backgroundColor = 'violet';
-            x = 5;
+        function hidePreview() {
+            document.getElementById('body').style.backgroundColor = currentColor;
+            let previewDiv = document.getElementById('preview');
+            previewDiv.style.display = 'none';
         }
 
         function reset() {
             document.getElementById('body').style.backgroundColor = 'white';
-            x = 0;
+            currentColor = 'white';
         }
     </script>
 </body>
