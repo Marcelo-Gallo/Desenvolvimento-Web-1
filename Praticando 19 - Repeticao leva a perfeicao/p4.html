@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar e Esconder DIV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #contentDiv {
+            background-color: #d7e7fd;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Praticando 3 - Mostrar/Esconder</h1>
+        <div class="d-flex justify-content-between mb-3">
+            <button id="showBtn" class="btn btn-primary">Mostrar</button>
+            <button id="hideBtn" class="btn btn-primary">Esconder</button>
+        </div>
+        <div id="contentDiv" class="mt-3">
+            Meu DIV
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showBtn').addEventListener('click', function() {
+            document.getElementById('contentDiv').style.display = 'block';
+        });
+
+        document.getElementById('hideBtn').addEventListener('click', function() {
+            document.getElementById('contentDiv').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
