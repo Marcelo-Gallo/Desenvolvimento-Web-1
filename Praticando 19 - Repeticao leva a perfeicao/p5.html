@@ -61,17 +61,19 @@
 
         quadrados.forEach(quadrado => {
             quadrado.addEventListener('click', () => {
-                if (quadradoSelecionado === quadrado) {
-                    quadradoSelecionado.style.top = posicoesIniciais[quadradoSelecionado.id].top + 'px';
-                    quadradoSelecionado.style.left = posicoesIniciais[quadradoSelecionado.id].left + 'px';
-                    quadradoSelecionado.classList.remove('destaque');
-                    quadradoSelecionado = null;
-                } else if (!quadradoSelecionado) {
-                    quadradoSelecionado = quadrado;
-                    quadradoSelecionado.classList.add('destaque');
-                    quadradoSelecionado.style.top = posicaoMeio[quadradoSelecionado.id].top + 'px';
-                    quadradoSelecionado.style.left = posicaoMeio[quadradoSelecionado.id].left + 'px';
-                }
+            if (quadradoSelecionado === quadrado) {
+                quadradoSelecionado.style.top = posicoesIniciais[quadradoSelecionado.id].top + 'px';
+                quadradoSelecionado.style.left = posicoesIniciais[quadradoSelecionado.id].left + 'px';
+                quadradoSelecionado.classList.remove('destaque');
+                quadradoSelecionado = null;
+            } else if (!quadradoSelecionado) {
+                quadradoSelecionado = quadrado;
+                quadradoSelecionado.classList.add('destaque');
+                quadradoSelecionado.style.top = posicaoMeio[quadradoSelecionado.id].top + 'px';
+                quadradoSelecionado.style.left = posicaoMeio[quadradoSelecionado.id].left + 'px';
+            } else {
+                alert('Desselecione o quadrado atual antes de selecionar outro.');
+            }
             });
         });
 
