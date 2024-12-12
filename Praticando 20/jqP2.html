@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 3 - JavaScript - cores (Click e mouse)</title>
+    <link rel="stylesheet" href="../X-Bootstrap/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            console.log("jQuery está funcionando!");
+            let currentColor = 'white';
+
+            function setColor(color) {
+                $('#body').css('background-color', color);
+                currentColor = color;
+            }
+
+            function preview(color) {
+                $('#body').css('background-color', color);
+                $('#preview').css('display', 'block');
+            }
+
+            function hidePreview() {
+                $('#body').css('background-color', currentColor);
+                $('#preview').css('display', 'none');
+            }
+
+            function reset() {
+                $('#body').css('background-color', 'white');
+                currentColor = 'white';
+            }
+
+            $('#b1').on('click', function() { setColor('red'); })
+                     .on('mouseover', function() { preview('red'); })
+                     .on('mouseout', function() { hidePreview(); });
+
+            $('#b2').on('click', function() { setColor('green'); })
+                     .on('mouseover', function() { preview('green'); })
+                     .on('mouseout', function() { hidePreview(); });
+
+            $('#b3').on('click', function() { setColor('blue'); })
+                     .on('mouseover', function() { preview('blue'); })
+                     .on('mouseout', function() { hidePreview(); });
+
+            $('#b4').on('click', function() { setColor('yellow'); })
+                     .on('mouseover', function() { preview('yellow'); })
+                     .on('mouseout', function() { hidePreview(); });
+
+            $('#b5').on('click', function() { setColor('violet'); })
+                     .on('mouseover', function() { preview('violet'); })
+                     .on('mouseout', function() { hidePreview(); });
+
+            $('#reset').on('click', function() { reset(); });
+        });
+    </script>
+
+    <style>
+        .vermelho {
+            background-color: red;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .rosa {
+            background-color: violet;
+        }
+
+        .preview {
+            display: none;
+            font-size: 2.5rem; /* Aumentando o tamanho da fonte */
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold; /* Adicionando negrito */
+        }
+    </style>
+
+</head>
+<body id="body">
+
+    <div class="container">
+        <h1>Praticando 3 - JavaScript - cores (Click e mouse)</h1>
+        <div class="d-flex justify-content-around">
+            <button id="b1" class="p-3 col-2 vermelho"></button>
+            <button id="b2" class="col-2 verde"></button>
+            <button id="b3" class="col-2 azul"></button>
+            <button id="b4" class="col-2 amarelo"></button>
+            <button id="b5" class="col-2 rosa"></button>
+        </div>
+
+        <div class="row mt-3 ms-3">
+            <button id="reset" class="col-2 btn btn-secondary">Reset</button>
+        </div>
+
+        <div id="preview" class="preview">
+            Preview
+        </div>
+
+    </div>
+
+</body>
+</html>
